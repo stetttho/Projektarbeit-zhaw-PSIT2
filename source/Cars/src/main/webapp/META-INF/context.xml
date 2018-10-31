@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="db-workshop">
+
+  <Resource
+    name="jdbc/db-workshop"
+    auth="Container" 
+    maxActive="20"
+    maxIdle="10"
+    maxWait="-1" 
+    username="dbwork"
+    password="G3X4pq3cr1" 
+    driverClassName="org.postgresql.Driver" 
+    url="jdbc:postgresql://127.0.0.1:5432/dbworkshop" 
+    type="javax.sql.DataSource" />
+</Context>

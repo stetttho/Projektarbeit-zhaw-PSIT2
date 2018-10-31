@@ -1,0 +1,24 @@
+unsortierte Kommentare, direkt während CodeReview in Source notiert
+
+
+base directory: source/Cars/src/main/java/ch/zhaw/ps16_gruppe08/cars/...
+
+.../AbwesenheitMitarbeiterServlet.java:133:	  // CR3: DRY zielUrl ist 3x gleich + 1x ähnlich => Konstanten definieren
+.../AbwesenheitMitarbeiterServlet.java:134:	  // CR3:     baseUrl = "/WEB-INF/pages/" (1x zusammensetzen)
+.../AbwesenheitMitarbeiterServlet.java:135:	  // CR3:     abwesenheitMitarbeiterUrl = baseUrl + "abwesenheitMitarbeiter.jsp" (2x direkt, 1x zusammensetzen)
+.../Kunde.java:80:    public boolean getStatusAktiv()  // CR3: Tipp: umbenennen in isStatusAktiv()
+.../Kunde.java:131:     * Ändert die Koordinaten (x-Koordinate, x-Koordinate)  // CR3: Kommentar korrigieren
+.../Kunde.java:197:     * Sortiert die Kunden nach deren Namen  // CR3: beschreiben welche Bedeutungen der Return-Wert hat
+.../AbwesenheitMitarbeiterServletTest.java:12: * Führt diverse Tests aus um die Klasse KundenterminServlet zu überprüfen  //CR3: falscher Kommentar; falsches Datei-Encoding
+.../AbwesenheitMitarbeiterServletTest.java:19:    // CR3: Tests fehlen (nicht alle Methoden getestet, nur constructor und processRequest getestet)
+.../AbwesenheitMitarbeiterServletTest.java:20:    // CR3: processRequest sehr gut getestet :-)
+.../AbwesenheitMitarbeiterTest.java:10:    // CR3: Tests fehlen (nicht alle Methoden getestet)
+.../AbwesenheitMitarbeiterTest.java:14:	private Calendar datumVon, datumBis;  // CR3: Tipp: besser nur 1 Variable pro Zeile
+.../AbwesenheitMitarbeiterTest.java:41:	// CR3: In den nachfolgenden Tests werden getter zum Vergleichen verwendet.
+.../AbwesenheitMitarbeiterTest.java:42:	// CR3: Die gettern müssen vor der Verwendung selbst auch geprüft werden
+.../AbwesenheitMitarbeiterTest.java:43:	// CR3: durch Vergleiche mit konstanten Werten.
+.../AlleTests.java:14:// CR3: sehr schön gelöst :-)
+.../AlleTests.java:15:// CR3: Tipp: besser nur eine .class pro Zeile
+.../KundeTest.java:105:    public void testeSortierung()  // CR3: Tipp: umbenennen in test<Methode>, d.h. testCompareTo()
+.../VarianteTest.java:21:    // CR3: Tests fehlen, v.a. Constructor mit implizitem Aufruf der privaten Kern-Methode routeErstellen()
+.../VarianteTest.java:22:    // CR3: vor den kombinierten funktionalen Tests die Methoden einzeln testen (Tipp: Naming test<Methode>) 

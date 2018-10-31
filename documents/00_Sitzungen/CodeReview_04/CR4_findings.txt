@@ -1,0 +1,27 @@
+base directories
+(1) source/Cars/src/main/java/ch/zhaw/ps16_gruppe08/cars/...
+(2) source/Cars/src/test/java/ch/zhaw/ps16_gruppe08/cars
+
+(1).../Kunde.java:34:                 final boolean statusAktiv,  // CR4: selbstsprechende enums verwenden (akiv, passiv, ehemalig, ...)
+(1).../Kunde.java:36:                 final int xKoordinate,  // CR4: X/Y-Koordinaten mit Klasse gruppieren 
+(1).../Kunde.java:88:    public boolean istStatusAktiv()  // CR4: umbenennen von Frage in Aussage (z.B. statusIstAktiv)
+(1).../Kunde.java:151:    public void setKoordinate(final int xKoordinate,  // CR4: YAGNI unbenutzt, nur in Tests
+(1).../Kunde.java:205:    public void setEmailAdresse(final String emailAdresse)  // CR4: YAGNI unbenutzt, nur in Tests
+(1).../Kunde.java:232:    public void setTelefonNr(final String telNr)  // CR4: YAGNI unbenutzt, nur in Tests
+(1).../Terminberechnung.java:91:    protected int zuBerechnendeAnzahlTage()  // CR4: private genügt
+(1).../Variante.java:54:            for(int index = 0;index < element.getAnzahlFahrzeuge(); index++)  // CR4: erklären lassen: Wozu index?
+(1).../Variante.java:68:                            && element.getAnzahlKundentermine()>0)  // CR4: verschieben nach oben zum if als 2. Bedingung &&
+(1).../Variante.java:135:    protected ArrayList<Kundentermin> getNaechsteNachAnzahl(  // CR4: private genügt
+(1).../Variante.java:168:    protected void loescheKundenTermine(final int kundeId)  // CR4: private genügt
+(1).../Variante.java:271:    public int getAnzahlRouten()  // CR4: YAGNI unbenutzt, nur in Tests
+
+(2).../AlleTests.java:23:    VarianteTest.class,  // CR4: GUT! basiert u.a. auf Kunde, daher danach testen
+(2).../KundeTest.java:40:	// CR4: Test fehlt: Welchen Wert haben kundeId (und die anderen Member) wenn zuvor der leere Konstruktor verwendet wird?
+(2).../KundeTest.java:106:     * Testet die Sortierung der Kunden  // CR4: umbenennen! sortieren => vergleichen
+(2).../KundeTest.java:210:     * und übprüft diese mit der Getter-Methode  // CR4: Kommentar anpassen (copy/paste)
+(2).../KundeTest.java:283:     * und übprüft diese mit der Getter-Methode  // CR4: überall Kommentar anpassen (copy/paste)
+(2).../KundeTest.java:288:        kunde1.setEmailAdresse("falschAdresse");  // CR4: das sind 2 Tests _> aufteilen
+(2).../VarianteTest.java:347:   // CR4: Test fehlt: Anzahl != 0 testen
+(2).../WochenplanTest.java:50:        	wochenplan.addRoute(route);  // CR4: setzte voraus, dass addRoute funktioniert
+(2).../WochenplanTest.java:69:        wochenplan.resetIndex();  // CR4: Methode wird erst später getestet => Methode vor diesem Test testen
+(2).../WochenplanTest.java:225:    // CR4: besser: mit 0 beginnen, dann 3 dazu und jeweils prüfen ob sich Anzahl erhöht

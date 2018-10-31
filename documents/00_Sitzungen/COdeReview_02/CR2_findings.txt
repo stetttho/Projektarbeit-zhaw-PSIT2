@@ -1,0 +1,3 @@
+base directory: Cars/src/main/java/ch/zhaw/ps16_gruppe08/cars
+
+.../Route.java:45:	    	// CR2: Zeile zu lang (siehe CR1)
